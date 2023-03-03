@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conjuntos</title>
+</head>
+<body>
+    <h1 id="title">Conjuntos</h1>
+    <section id="selectSection">
+        <p>Selecione o conjunto a ser utilizado:</p>
+        <select name="selectTheSet" id="selectTheSet">
+            <option selected disabled>Selecione</option>
+            <option class="sets">Alfabeto - vogais</option>
+            <option class="sets">Alfabeto - inteiro</option>
+            <option class="sets">Algarismos</option>
+        </select>
+        <input type="button" value="OK" id="okButton" onclick="fSubmit()">
+    </section>
+    <section id="systemSection">
+        <div id="Main_Section">
+            <div id="previousElement" class="arrows" onclick="click_PreviousElement()">
+                <p><</p>
+            </div>
+            <div id="element">
+                <h2></h2>
+            </div>
+            <div id="nextElement" class="arrows" onclick="click_NextElement()">
+                <p>></p>
+            </div>
+        </div>
+        <div id="StartAndEnd_Section">
+            <div id="firstElement" onclick="click_FirstElement()">
+                <h3></h3>
+            </div>
+            <div id="lastElement" onclick="click_LastElement()">
+                <h3></h3>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
